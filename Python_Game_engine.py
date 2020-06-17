@@ -26,7 +26,9 @@ def chapter_one():
     from Python_RPG_Monster_List import wolf
 
     slow_type(Python_RPG_Story_Text.text_block_one, 1000)
-    print(wolf['health'], wolf['attack'], wolf['escape_rating'])
-    Python_RPG_Combat_Engine.start_combat(wolf['name'], wolf['health'], wolf['attack'], wolf['escape_rating'])
+    Python_RPG_Combat_Engine.monster_health = wolf['health']
+    Python_RPG_Combat_Engine.start_combat(wolf['name'], wolf['attack'], wolf['escape_rating'])
+    
+    
 
 start_menu()

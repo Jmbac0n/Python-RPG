@@ -12,7 +12,7 @@ player_action_text = ("""\
 player_attack_text = ("""\
         
         Attacking %s - Hit for %s Damage
-        Monster HP: %s
+        %s HP: %s
         ____________________________
 
         """)
@@ -31,7 +31,7 @@ player_escape_success_text = ("""\
 
 player_escape_fail_text = ("""\
 
-        The monster prevents you from escaping
+        The %s prevents you from escaping
 
         """)
 
@@ -39,13 +39,13 @@ player_escape_fail_text = ("""\
 
 monster_action_text = ("""\
 
-        The Monster attacks you
+        The %s attacks you
 
         """)
 
 monster_attack_text = ("""\
 
-        Monster Attacking - Hit for %s Damage
+        %s Attacking - Hit for %s Damage
         Player HP: %s
         ___________________________
 
@@ -56,6 +56,8 @@ monster_attack_text = ("""\
 defeat_text = ("""\
         
         You have been defeated
+        
+              Game Over
         
         """)
 
