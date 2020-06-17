@@ -11,7 +11,7 @@ player_action_text = ("""\
 
 player_attack_text = ("""\
         
-        Attacking Monster - Hit for %s Damage
+        Attacking %s - Hit for %s Damage
         Monster HP: %s
         ____________________________
 
