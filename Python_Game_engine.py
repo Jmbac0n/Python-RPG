@@ -28,7 +28,12 @@ def chapter_one():
     slow_type(Python_RPG_Story_Text.text_block_one, 1000)
     Python_RPG_Combat_Engine.monster_health = wolf['health']
     Python_RPG_Combat_Engine.start_combat(wolf['name'], wolf['attack'], wolf['escape_rating'])
-    
+
+def chapter_two():
+
+    slow_type(Python_RPG_Story_Text.text_block_two, 1000)
+    slow_type(Python_RPG_Story_Text.text_block_three, 1000)   
     
 
-start_menu()
+#start_menu()
+chapter_two()

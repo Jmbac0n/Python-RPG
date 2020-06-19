@@ -1,8 +1,15 @@
 wolf = {
-    'name': "wolf",
+    'name': "Wolf",
     'health': 10,
     'attack': 2,
     'escape_rating': 50
+}
+
+goblin = {
+    'name': "Goblin Wizard",
+    'health': 15,
+    'attack': 4,
+    'escape_rating': 55
 }
 
 #class Monster:

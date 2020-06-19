@@ -85,3 +85,9 @@ def start_combat(m_name, m_attack, m_e_rating):
             #return battle_result
 
     turn_check_player()
+
+#TODO
+
+#If player wins the battle, award exp/boost to atk + health plus item move to chapter 2
+#If player loses, option to try again
+# Escaping yields no rewards
