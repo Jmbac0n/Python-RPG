@@ -5,15 +5,15 @@ import Python_RPG_Combat_Engine
 
 #Global variables
 player_health = 10
-player_attack = 5
+player_attack = 5 
 
 monster_health = 0
+
+battle_result = False
 
 # Monster exp - Earned if battle won and added to player total
 
 def start_combat(m_name, m_attack, m_e_rating):
-
-    #battle_result = False
     
     def slow_type(t):
         typing_speed = 150 #wpm
@@ -35,7 +35,7 @@ def start_combat(m_name, m_attack, m_e_rating):
         player_input = input()
 
         if player_input == ("1"):
-            p_atk = random.randint(1, player_attack)
+            p_atk = random.randint(1, player_attack) 
             monster_health = monster_health - p_atk
             slow_type(Python_RPG_Combat_Text.player_attack_text % (str(monster_name), (p_atk), (monster_name), (monster_health))) # Got to here last night - finish changing combat text
         elif player_input == ("2"):
@@ -63,26 +63,25 @@ def start_combat(m_name, m_attack, m_e_rating):
 
     def turn_check_player():
         global player_health
+        global battle_result
         #global battle_result
 
         if player_health > 0:
             player_turn()
         elif player_health < 1:
             slow_type(Python_RPG_Combat_Text.defeat_text)
-            #battle_result = True
-            #return battle_result
+            battle_result = False
 
     def turn_check_monster():
         global monster_health
-        #global battle_result
+        global battle_result
 
         if monster_health > 0:
             monster_turn()
         elif monster_health < 1:
             slow_type(Python_RPG_Combat_Text.victory_text)
-            #battle_result = False
-            #print(battle_result)
-            #return battle_result
+            battle_result = True
+            
 
     turn_check_player()
 
