@@ -53,3 +53,11 @@ text_block_three = ("""\
   
         """)
 
+# Game Over
+
+game_over = ("""\
+
+               GAME OVER
+
+        """)
+

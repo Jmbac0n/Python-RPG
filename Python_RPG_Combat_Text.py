@@ -57,8 +57,6 @@ defeat_text = ("""\
         
         You have been defeated
         
-              Game Over
-        
         """)
 
 # Victory Text
