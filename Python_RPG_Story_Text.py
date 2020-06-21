@@ -59,5 +59,7 @@ game_over = ("""\
 
                GAME OVER
 
+          To try again enter 1
+
         """)
 
