@@ -2,6 +2,8 @@ import sys, time, random
 import Python_RPG_Combat_Engine
 import Python_RPG_Story_Text
 import Python_RPG_Monster_List
+import Python_RPG_Player_Sheet
+import Python_RPG_Item_List
 
 def slow_type(t, t_speed):
     typing_speed = t_speed
@@ -38,6 +40,9 @@ def chapter_two(b_result):
 
     if battle_result == (True):
         slow_type(Python_RPG_Story_Text.text_block_two, 1000)
+        Python_RPG_Player_Sheet.player['health'] = Python_RPG_Player_Sheet.player['health'] + Python_RPG_Item_List.shield['defense']
+        Python_RPG_Player_Sheet.player['attack'] = Python_RPG_Player_Sheet.player['attack'] + Python_RPG_Item_List.sword['attack_power']
+        Python_RPG_Player_Sheet.show_player_sheet()
         slow_type(Python_RPG_Story_Text.text_block_three, 1000)
         Python_RPG_Combat_Engine.monster_health = goblin['health']
         Python_RPG_Combat_Engine.start_combat(goblin['name'], goblin['attack'], goblin['escape_rating'])

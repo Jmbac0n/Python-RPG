@@ -39,13 +39,17 @@ text_block_one = ("""\
 
 text_block_two = ("""\
 
-        You have bested the wolf! You are now free to continue on your
-        journey to the nearby village. 
+        You have bested the wolf!
+
+        It appears to have been guarding a backpack. Inside you find a sword,
+        shield and health potion. 
 
         """)
 
 text_block_three = ("""\
-  
+        
+        You are now free to continue on your journey to the nearby village. 
+
         When you arrive at the village it is absolute chaos. People are
         running about screaming and a few of the houses have caught fire.
         You reach the square and see a goblin spewing spells from his

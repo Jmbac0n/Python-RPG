@@ -2,10 +2,11 @@ import sys,time,random
 import Python_RPG_Combat_Text
 import Python_RPG_Monster_List
 import Python_RPG_Combat_Engine
+import Python_RPG_Player_Sheet
 
 #Global variables
-player_health = 10
-player_attack = 5 
+player_health = Python_RPG_Player_Sheet.player['health']
+player_attack = Python_RPG_Player_Sheet.player['attack']
 
 monster_health = 0
 
@@ -64,7 +65,6 @@ def start_combat(m_name, m_attack, m_e_rating):
     def turn_check_player():
         global player_health
         global battle_result
-        #global battle_result
 
         if player_health > 0:
             player_turn()
@@ -87,6 +87,8 @@ def start_combat(m_name, m_attack, m_e_rating):
 
 #TODO
 
-#If player wins the battle, award exp/boost to atk + health plus item move to chapter 2
-#If player loses, option to try again
+# If player wins the battle, award exp/boost to atk + health plus item move to chapter 2
+# If player loses, option to try again
 # Escaping yields no rewards
+
+# Create item inventory that can have items added to and taken away from
