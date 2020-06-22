@@ -32,7 +32,7 @@ def start_combat(m_name, m_attack, m_e_rating):
 
         slow_type(Python_RPG_Combat_Text.player_action_text)
 
-        player_input = input()
+        player_input = input() # Sometimes this line is skipped every loop
 
         if player_input == ("1"):
             p_atk = random.randint(1, player_attack) 

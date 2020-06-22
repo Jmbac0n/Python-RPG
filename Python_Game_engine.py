@@ -32,15 +32,23 @@ def chapter_one():
 
 def chapter_two(b_result):
 
+    from Python_RPG_Monster_List import goblin
+
     battle_result = b_result
 
     if battle_result == (True):
         slow_type(Python_RPG_Story_Text.text_block_two, 1000)
         slow_type(Python_RPG_Story_Text.text_block_three, 1000)
+        Python_RPG_Combat_Engine.monster_health = goblin['health']
+        Python_RPG_Combat_Engine.start_combat(goblin['name'], goblin['attack'], goblin['escape_rating'])
     elif battle_result == (False):
         slow_type(Python_RPG_Story_Text.game_over, 1000)
 
     
 
-#start_menu()
-chapter_one()
+start_menu()
+
+#Known Bugs
+
+#Sometimes - During the combat sequence the code will jump over the player input and allow
+#the monster to keep attacking until player is dead.
